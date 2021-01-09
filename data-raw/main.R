@@ -4,6 +4,8 @@ library(ggplot2)
 library(cowplot)
 library(randomForest)
 library(signal)
+library(purrr)
+library(parallel)
 devtools::load_all()
 
 # 若设置TRUE, 则在CPU是i9,8核16线程下大约跑22分钟左右。因为是随机抽样，每次跑完结果略有差异。
