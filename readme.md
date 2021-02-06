@@ -2,15 +2,17 @@
 本项目是按照R包的结构进行组织的，这有利于我们代码的编写和优化。在利用本项目重现欧阳志刚和陈普(2020)的内容时，先按如下步骤进行准备：
 
 1. 将本项目克隆到本地。你可以通过命令行克隆，这最好。也可以打开网址，https://github.com/common2016/FactorandIndustry后，鼠标点击下载。
+
+   ![ab](https://ftp.bmp.ovh/imgs/2021/01/ba52d0bbdabc4e3b.png)
+
 2. 解压后，双击打开`FactorandIndustry.Rproj`。这保证了路径设置是正确，为后续工作做好准备。
 
 ## 数据
 
 - 因变量：主营业务收入，源自Wind数据库。
 ```r
-devtools::load_all()
-     data("Ind0111")
-     head(Ind0111)
+data("Ind0111")
+head(Ind0111)
 ##    province year IndCode employment         industry
 ## 33     安徽 2006     B06   372.5108 煤炭开采和洗选业
 ## 34     安徽 2006     B08    48.6659 黑色金属矿采选业
